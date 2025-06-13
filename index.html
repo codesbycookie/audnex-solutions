@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Audnex Solutions | Accounting, Audit & Compliance Services in India
+    </title>
+    <meta
+      name="description"
+      content="Audnex Solutions is your trusted partner for accounting, auditing, statutory filing, financial consulting, and business registration services in India. Transparent. Reliable. Professional."
+    />
+    <meta
+      name="keywords"
+      content="Audnex Solutions, Accounting Services India, Audit Firm, Compliance Services, Statutory Filing, Business Registration, Taxation, ROC Filing, Financial Advisory"
+    />
+    <meta name="author" content="Audnex Solutions" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://www.audnexsolutions.com/" />
+
+    <link rel="icon" href="./images/logo-light.png" type="image/png" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Audnex Solutions | Trusted Financial & Compliance Services"
+    />
+    <meta
+      property="og:description"
+      content="Offering expert financial services including accounting, auditing, compliance, and business registration across India."
+    />
+    <meta
+      property="og:image"
+      content="https://www.audnexsolutions.com/images/og-image.jpg"
+    />
+    <meta property="og:url" content="https://www.audnexsolutions.com/" />
+    <meta property="og:site_name" content="Audnex Solutions" />
+
+    <!-- Language -->
+    <meta name="language" content="English" />
+    <meta name="distribution" content="global" />
+
+    <!-- CSS & Fonts -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+    x-init="
+         darkMode = JSON.parse(localStorage.getItem('darkMode'));
+         $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+    :class="{'b eh': darkMode === true}"
+  >
+    <!-- ===== Header Start ===== -->
+    <header
+      class="g s r vd ya cj"
+      :class="{ 'hh sm _k dj bl ll' : stickyMenu }"
+      @scroll.window="stickyMenu = (window.pageYOffset > 20) ? true : false"
+    >
+      <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
+        <div class="vd to/4 tc wf yf">
+          <a
+            href="index.html"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-decoration: none;
+            "
+          >
+            <!-- Logo -->
+            <img
+              class="om"
+              src="images/logo-light.png"
+              alt="Logo Light"
+              style="
+                height: 100%;
+                max-height: 50px;
+                width: auto;
+                display: inline-block;
+                vertical-align: middle;
+              "
+            />
+            <h1 class="fk vj zp or kk wm wb navbar-title">
+              Audnex Solutions
+            </h1></a
+          >
+
+          <!-- Hamburger Toggle BTN -->
+          <button class="po rc" @click="navigationOpen = !navigationOpen">
+            <span class="rc i pf re pd">
+              <span class="du-block h q vd yc">
+                <span
+                  class="rc i r s eh um tg te rd eb ml jl dl"
+                  :class="{ 'ue el': !navigationOpen }"
+                ></span>
+                <span
+                  class="rc i r s eh um tg te rd eb ml jl fl"
+                  :class="{ 'ue qr': !navigationOpen }"
+                ></span>
+                <span
+                  class="rc i r s eh um tg te rd eb ml jl gl"
+                  :class="{ 'ue hl': !navigationOpen }"
+                ></span>
+              </span>
+              <span class="du-block h q vd yc lf">
+                <span
+                  class="rc eh um tg ml jl el h na r ve yc"
+                  :class="{ 'sd dl': !navigationOpen }"
+                ></span>
+                <span
+                  class="rc eh um tg ml jl qr h s pa vd rd"
+                  :class="{ 'sd rr': !navigationOpen }"
+                ></span>
+              </span>
+            </span>
+          </button>
+          <!-- Hamburger Toggle BTN -->
+        </div>
+
+        <div
+          class="vd wo/4 sd qo f ho oo wf yf"
+          :class="{ 'd hh rm sr td ud qg ug jc yh': navigationOpen }"
+        >
+          <nav class="flex justify-center">
+            <ul class="tc _o sf yo cg ep">
+              <li>
+                <a href="index.html" class="xl">Home</a>
+              </li>
+              <li><a href="index.html#about-section" class="xl">About</a></li>
+              <li>
+                <a href="index.html#services-section" class="xl">Services</a>
+              </li>
+              <li>
+                <a href="index.html#contact-us-section" class="xl"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="tc wf ig pb no">
+            <div
+              class="pc h io pa ra"
+              :class="navigationOpen ? '!-ud-visible' : 'd'"
+            >
+              <label class="rc ab i">
+                <input
+                  type="checkbox"
+                  :value="darkMode"
+                  @change="darkMode = !darkMode"
+                  class="pf vd yc uk h r za ab"
+                />
+                <!-- Icon Sun -->
+                <svg
+                  :class="{ 'wn' : page === 'home', 'xh' : page === 'home' && stickyMenu }"
+                  class="th om"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.0908 18.6363C10.3549 18.6363 8.69 17.9467 7.46249 16.7192C6.23497 15.4916 5.54537 13.8268 5.54537 12.0908C5.54537 10.3549 6.23497 8.69 7.46249 7.46249C8.69 6.23497 10.3549 5.54537 12.0908 5.54537C13.8268 5.54537 15.4916 6.23497 16.7192 7.46249C17.9467 8.69 18.6363 10.3549 18.6363 12.0908C18.6363 13.8268 17.9467 15.4916 16.7192 16.7192C15.4916 17.9467 13.8268 18.6363 12.0908 18.6363ZM12.0908 16.4545C13.2481 16.4545 14.358 15.9947 15.1764 15.1764C15.9947 14.358 16.4545 13.2481 16.4545 12.0908C16.4545 10.9335 15.9947 9.8236 15.1764 9.00526C14.358 8.18692 13.2481 7.72718 12.0908 7.72718C10.9335 7.72718 9.8236 8.18692 9.00526 9.00526C8.18692 9.8236 7.72718 10.9335 7.72718 12.0908C7.72718 13.2481 8.18692 14.358 9.00526 15.1764C9.8236 15.9947 10.9335 16.4545 12.0908 16.4545ZM10.9999 0.0908203H13.1817V3.36355H10.9999V0.0908203ZM10.9999 20.8181H13.1817V24.0908H10.9999V20.8181ZM2.83446 4.377L4.377 2.83446L6.69082 5.14828L5.14828 6.69082L2.83446 4.37809V4.377ZM17.4908 19.0334L19.0334 17.4908L21.3472 19.8046L19.8046 21.3472L17.4908 19.0334ZM19.8046 2.83337L21.3472 4.377L19.0334 6.69082L17.4908 5.14828L19.8046 2.83446V2.83337ZM5.14828 17.4908L6.69082 19.0334L4.377 21.3472L2.83446 19.8046L5.14828 17.4908ZM24.0908 10.9999V13.1817H20.8181V10.9999H24.0908ZM3.36355 10.9999V13.1817H0.0908203V10.9999H3.36355Z"
+                    fill=""
+                  />
+                </svg>
+                <!-- Icon Sun -->
+                <img class="xc nm" src="images/icon-moon.svg" alt="Moon" />
+              </label>
+            </div>
+            <!-- 
+            <a
+              href="signin.html"
+              :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }"
+              class="ek pk xl"
+              >Sign In</a
+            >
+            <a
+              href="signup.html"
+              :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }"
+              class="lk gh dk rg tc wf xf _l gi hi"
+              >Sign Up</a
+            > -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== Header End ===== -->
+
+    <main>
+      <!-- ===== Hero Start ===== -->
+      <section class="gj do ir hj sp jr i pg">
+        <!-- Hero Images -->
+        <div class="xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 h q r">
+          <img
+            src="images/shape-01.svg"
+            alt="shape"
+            class="xc 2xl:ud-block h t -ud-left-[10%] ua"
+          />
+          <img
+            src="images/shape-02.svg"
+            alt="shape"
+            class="xc 2xl:ud-block h u p va"
+          />
+          <img
+            src="images/shape-03.svg"
+            alt="shape"
+            class="xc 2xl:ud-block h v w va"
+          />
+          <img src="images/shape-04.svg" alt="shape" class="h q r" />
+          <img src="images/hero.png" alt="Woman" class="h q r ua" />
+        </div>
+
+        <!-- Hero Content -->
+        <div class="bb ze ki xn 2xl:ud-px-0">
+          <div class="tc _o">
+            <div class="animate_left jn/2">
+              <h1 class="fk vj zp or kk wm wb">
+                A Thread of Trust in Every Transaction
+              </h1>
+              <p class="fq">
+                At Audnex Solutions, we are committed to delivering precise,
+                reliable, and result-oriented financial and compliance services.
+                With a focus on integrity and excellence, we support businesses
+                with tailored accounting, auditing, statutory filings, finance,
+                and registration services — all under one trusted roof.
+              </p>
+
+              <div class="tc tf yo zf mb">
+                <a
+                  href="#contact-us-section"
+                  class="ek jk lk gh gi hi rg ml il vc _d _l"
+                  >Get Started Now</a
+                >
+
+                <span class="tc sf">
+                  <a href="tel:919790971428" class="inline-block ek xj kk wm">
+                    Call us (+91) 9790971428
+                  </a>
+                  <span class="inline-block">For any question or concern</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Hero End ===== -->
+
+      <!-- ===== Small Features Start ===== -->
+      <section id="features">
+        <div class="bb ze ki yn 2xl:ud-px-12.5">
+          <div class="tc uf zo xf ap zf bp mq">
+            <!-- Small Features Item -->
+            <div class="animate_top kn to/3 tc cg oq">
+              <div class="tc wf xf cf ae cd rg mh">
+                <img src="images/icon-01.svg" alt="Icon" />
+              </div>
+              <div>
+                <h4 class="ek yj go kk wm xb">24/7 Support</h4>
+                <p>
+                  We're available around the clock to assist you whenever you
+                  need us.
+                </p>
+              </div>
+            </div>
+
+            <!-- Small Features Item -->
+            <div class="animate_top kn to/3 tc cg oq">
+              <div class="tc wf xf cf ae cd rg nh">
+                <img src="images/icon-02.svg" alt="Icon" />
+              </div>
+              <div>
+                <h4 class="ek yj go kk wm xb">Take Ownership</h4>
+                <p>
+                  We take full responsibility for every task, treating your
+                  business like our own.
+                </p>
+              </div>
+            </div>
+
+            <!-- Small Features Item -->
+            <div class="animate_top kn to/3 tc cg oq">
+              <div class="tc wf xf cf ae cd rg oh">
+                <img src="images/icon-03.svg" alt="Icon" />
+              </div>
+              <div>
+                <h4 class="ek yj go kk wm xb">Team Work</h4>
+                <p>
+                  We work collaboratively with you to ensure transparent and
+                  successful outcomes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Small Features End ===== -->
+
+      <!-- ===== About Start ===== -->
+      <section class="ji gp uq 2xl:ud-py-35 pg" id="about-section">
+        <div class="bb ze ki xn wq">
+          <div class="tc wf gg qq">
+            <!-- About Images -->
+            <div class="animate_left xc gn gg jn/2 i">
+              <div>
+                <img
+                  src="images/shape-05.svg"
+                  alt="Shape"
+                  class="h -ud-left-5 x"
+                />
+                <img src="images/about-01.png" alt="About" class="ib" />
+                <img src="images/about-02.png" alt="About" />
+              </div>
+              <div>
+                <img src="images/shape-06.svg" alt="Shape" />
+                <img src="images/about-03.png" alt="About" class="ob gb" />
+                <img src="images/shape-07.svg" alt="Shape" class="bb" />
+              </div>
+            </div>
+
+            <!-- About Content -->
+            <div class="animate_right jn/2">
+              <h4 class="ek yj mk gb">Why Choose Us</h4>
+              <h2 class="fk vj zp pr kk wm qb">
+                Your Professional Partner in Finance, Compliance, and Business
+                Growth
+              </h2>
+              <p class="uo">
+                Audnex Solutions is a team of qualified financial professionals
+                dedicated to helping businesses maintain accurate records, stay
+                compliant, and make informed financial decisions. Whether you’re
+                a startup or an established enterprise, our solutions are
+                customized to your operational needs, with transparency and
+                trust at the core of everything we do.
+              </p>
+
+              <!-- <a
+                href="https://www.youtube.com/watch?v=xcJtL7QggTI"
+                data-fslightbox
+                class="vc wf hg mb"
+              >
+                <span class="tc wf xf be dd rg i gh ua">
+                  <span class="nf h vc yc vd rg gh qk -ud-z-1"></span>
+                  <img src="images/icon-play.svg" alt="Play" />
+                </span>
+                <span class="kk">SEE HOW WE WORK</span>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== About End ===== -->
+
+      <!-- ===== Team Start ===== -->
+      <section class="i pg ji gp uq">
+        <!-- Bg Shapes -->
+        <span class="rc h s r vd fd/5 fh rm"></span>
+        <img src="images/shape-08.svg" alt="Shape Bg" class="h q r" />
+        <img src="images/shape-09.svg" alt="Shape" class="of h y z/2" />
+        <img src="images/shape-10.svg" alt="Shape" class="h _ aa" />
+        <img src="images/shape-11.svg" alt="Shape" class="of h m ba" />
+
+        <!-- Section Title Start -->
+        <!-- Section Heading -->
+        <div
+          x-data="{ sectionTitle: `Meet With Our Dedicated Leadership Team`, sectionTitleText: `At AudNex Solutions, our leadership brings vision, expertise, and a deep commitment to delivering trustworthy and high-quality financial services.` }"
+        >
+          <div class="animate_top bb ze rj ki xn vq">
+            <h2
+              x-text="sectionTitle"
+              class="fk vj pr kk wm on/5 gq/2 bb _b"
+            ></h2>
+          </div>
+        </div>
+
+        <!-- Team Section Container -->
+        <div class="bb ze i va ki xn xq jb jo team-section">
+          <div class="wc qf pn xo gg cp">
+            <!-- Team Item: Dr. Manju Gowtham -->
+
+            <div class="rj team-card-static">
+              <div class="c i pg z-1">
+                <div class="team-content-static">
+                  <h4 class="team-name-static">Dr. Manju Gowtham</h4>
+                  <p class="team-role-static">
+                    Founder & Chief Executive Officer
+                  </p>
+                  <p class="team-description-static">
+                    Leads the firm’s strategic vision and client engagement,
+                    driving innovation with deep expertise in finance and cost
+                    accountancy.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Team Item: Mr. Naveen -->
+            <div class="rj team-card-static">
+              <div class="c i pg z-1">
+                <div class="team-content-static">
+                  <h4 class="team-name-static">Mr. Naveen</h4>
+                  <p class="team-role-static">
+                    Co-Founder & Chief Operating Officer
+                  </p>
+                  <p class="team-description-static">
+                    Oversees strategic execution and operations, ensuring
+                    high-quality consulting solutions aligned with client goals.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Item: Mr. Hitheshwaran -->
+            <div class="rj team-card-static">
+              <div class="c i pg z-1">
+                <div class="team-content-static">
+                  <h4 class="team-name-static">Mr. Hitheshwaran</h4>
+                  <p class="team-role-static">
+                    Co-Founder & Chief Financial Officer
+                  </p>
+                  <p class="team-description-static">
+                    Leads financial strategy and compliance, with hands-on
+                    expertise in taxation, auditing, ROC, and regulatory
+                    frameworks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Team End ===== -->
+
+      <!-- ===== Services Start ===== -->
+      <section class="lj tp kr" id="services-section">
+        <!-- Section Title Start -->
+        <div
+          x-data="{ sectionTitle: `We Offer The Best Quality Service for You`}"
+        >
+          <div class="animate_top bb ze rj ki xn vq">
+            <h2
+              x-text="sectionTitle"
+              class="fk vj pr kk wm on/5 gq/2 bb _b"
+            ></h2>
+          </div>
+        </div>
+        <!-- Section Title End -->
+
+        <div class="bb ze ki xn yq mb en">
+          <div class="wc qf pn xo ng">
+            <!-- Service Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-04.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Accounting Services</h4>
+              <p>
+                Stay on top of your finances with our end-to-end bookkeeping and
+                reporting solutions. We utilize Tally and other custom software
+                to deliver detailed insights into your business performance.
+              </p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-05.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Auditing Services</h4>
+              <p>
+                Our audit process ensures accuracy, identifies inefficiencies,
+                and provides actionable recommendations. We review all financial
+                and operational records
+              </p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-06.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Statutory Compliances</h4>
+              <p>
+                We help you stay compliant with all legal and regulatory
+                requirements through timely planning and filings.
+              </p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-07.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Financing Services</h4>
+              <p>
+                Get expert guidance for business finance and funding
+                requirements
+              </p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-05.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Registration Services</h4>
+              <p>
+                Let us simplify your business formation and registration needs.
+              </p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-06.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">
+                Financial Restructuring & Advisory
+              </h4>
+              <p>
+                Navigate complex financial challenges with clarity. We offer
+                strategic restructuring solutions to improve financial health,
+                enhance liquidity, and support sustainable business growth
+                through expert financial advisory..
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Services End ===== -->
+
+      <section class="hj rp hr">
+        <!-- Section Title Start -->
+        <div>
+          <div class="animate_top bb ze rj ki xn vq">
+            <h2 class="fk vj pr kk wm on/5 gq/2 bb _b">
+              Client’s Testimonials
+            </h2>
+            <p class="bb on/5 wo/5 hq">
+              Hear what our satisfied clients have to say about our responsive
+              service, timely compliance support, and professional guidance.
+            </p>
+          </div>
+        </div>
+        <!-- Section Title End -->
+
+        <div class="bb ze ki xn ar">
+          <div class="animate_top jb cq">
+            <!-- Slider main container -->
+            <div class="swiper testimonial-01">
+              <!-- Wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Testimonial Item -->
+                <div class="swiper-slide">
+                  <div class="i hh rm sg vk xm bi qj">
+                    <div class="tc sf rn tn un zf dp">
+                      <img
+                        class="bf"
+                        src="images/testimo.png"
+                        alt="Testimonial Illustration"
+                      />
+                      <div>
+                        <img src="images/icon-quote.svg" alt="Quote" />
+                        <p class="ek ik xj _p kc fb">
+                          Thank you for helping us file our taxes on time this
+                          year. Your responsiveness during peak season was
+                          really appreciated.
+                        </p>
+                        <div class="tc yf vf">
+                          <div>
+                            <span class="rc ek xj kk wm zb">Suganthi</span>
+                            <span class="rc">Govt Employee, ITR Client</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Next -->
+                <div class="swiper-slide">
+                  <div class="i hh rm sg vk xm bi qj">
+                    <div class="tc sf rn tn un zf dp">
+                      <img
+                        class="bf"
+                        src="images/testimo.png"
+                        alt="Testimonial Illustration"
+                      />
+                      <div>
+                        <img src="images/icon-quote.svg" alt="Quote" />
+                        <p class="ek ik xj _p kc fb">
+                          Your advice on restructuring our investments really
+                          helped lower our tax liability significantly.
+                        </p>
+                        <div class="tc yf vf">
+                          <div>
+                            <span class="rc ek xj kk wm zb">Aparna</span>
+                            <span class="rc">Salaried ITR Client</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="i hh rm sg vk xm bi qj">
+                    <div class="tc sf rn tn un zf dp">
+                      <img
+                        class="bf"
+                        src="images/testimo.png"
+                        alt="Testimonial Illustration"
+                      />
+                      <div>
+                        <img src="images/icon-quote.svg" alt="Quote" />
+                        <p class="ek ik xj _p kc fb">
+                          We truly appreciate how proactive you’ve been in
+                          managing our tax deadlines. Your early reminders and
+                          timely submissions have significantly reduced our
+                          stress during filing season.
+                        </p>
+                        <div class="tc yf vf">
+                          <div>
+                            <span class="rc ek xj kk wm zb">Sathish Kumar</span>
+                            <span class="rc">Salaried ITR Client</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="i hh rm sg vk xm bi qj">
+                    <div class="tc sf rn tn un zf dp">
+                      <img
+                        class="bf"
+                        src="images/testimo.png"
+                        alt="Testimonial Illustration"
+                      />
+                      <div>
+                        <img src="images/icon-quote.svg" alt="Quote" />
+                        <p class="ek ik xj _p kc fb">
+                          You're always available to clarify doubts, even at
+                          short notice. That level of responsiveness makes a big
+                          difference, especially for a growing business like
+                          ours.
+                        </p>
+                        <div class="tc yf vf">
+                          <div>
+                            <span class="rc ek xj kk wm zb"
+                              >Imayam Traders</span
+                            >
+                            <span class="rc">Business Client</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="i hh rm sg vk xm bi qj">
+                    <div class="tc sf rn tn un zf dp">
+                      <img
+                        class="bf"
+                        src="images/testimo.png"
+                        alt="Testimonial Illustration"
+                      />
+                      <div>
+                        <img src="images/icon-quote.svg" alt="Quote" />
+                        <p class="ek ik xj _p kc fb">
+                          Your professionalism and clear communication have made
+                          a positive impact on our business. We look forward to
+                          continuing this relationship.
+                        </p>
+                        <div class="tc yf vf">
+                          <div>
+                            <span class="rc ek xj kk wm zb"
+                              >Envita Pvt Ltd</span
+                            >
+                            <span class="rc">Client</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="i hh rm sg vk xm bi qj">
+                    <div class="tc sf rn tn un zf dp">
+                      <img
+                        class="bf"
+                        src="images/testimo.png"
+                        alt="Testimonial Illustration"
+                      />
+                      <div>
+                        <img src="images/icon-quote.svg" alt="Quote" />
+                        <p class="ek ik xj _p kc fb">
+                          GST registration process was smooth and efficient, and
+                          we appreciate how you guided us through each step with
+                          clarity.
+                        </p>
+                        <div class="tc yf vf">
+                          <div>
+                            <span class="rc ek xj kk wm zb">Surya Tooling</span>
+                            <span class="rc">GST Registration</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="i hh rm sg vk xm bi qj">
+                    <div class="tc sf rn tn un zf dp">
+                      <img
+                        class="bf"
+                        src="images/testimo.png"
+                        alt="Testimonial Illustration"
+                      />
+                      <div>
+                        <img src="images/icon-quote.svg" alt="Quote" />
+                        <p class="ek ik xj _p kc fb">
+                          Your timely handling of our monthly GST returns has
+                          ensured that we stay compliant without any last-minute
+                          stress or penalties.
+                        </p>
+                        <div class="tc yf vf">
+                          <div>
+                            <span class="rc ek xj kk wm zb"
+                              >Vinayaga Enterprises</span
+                            >
+                            <span class="rc">GST Returns</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="i hh rm sg vk xm bi qj">
+                    <div class="tc sf rn tn un zf dp">
+                      <img
+                        class="bf"
+                        src="images/testimo.png"
+                        alt="Testimonial Illustration"
+                      />
+                      <div>
+                        <img src="images/icon-quote.svg" alt="Quote" />
+                        <p class="ek ik xj _p kc fb">
+                          Thank you AudNex Solutions for managing our MCA
+                          filings smoothly. The process was well-handled, and
+                          your timely reminders helped us avoid any compliance
+                          issues.
+                        </p>
+                        <div class="tc yf vf">
+                          <div>
+                            <span class="rc ek xj kk wm zb"
+                              >Vitomoto Pvt Ltd</span
+                            >
+                            <span class="rc">MCA Filing</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="i hh rm sg vk xm bi qj">
+                    <div class="tc sf rn tn un zf dp">
+                      <img
+                        class="bf"
+                        src="images/testimo.png"
+                        alt="Testimonial Illustration"
+                      />
+                      <div>
+                        <img src="images/icon-quote.svg" alt="Quote" />
+                        <p class="ek ik xj _p kc fb">
+                          ROC filings were completed on time—thanks for the
+                          smooth execution.
+                        </p>
+                        <div class="tc yf vf">
+                          <div>
+                            <span class="rc ek xj kk wm zb"
+                              >Mr. Srinivasan</span
+                            >
+                            <span class="rc">Partner, Gaming Studio</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Navigation buttons -->
+              <div class="tc wf xf fg jb">
+                <div
+                  class="swiper-button-prev c tc wf xf ie ld rg _g dh pf ml vr hh rm tl zm rl ym"
+                >
+                  <svg
+                    class="th lm"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.52366 7.83336L7.99366 12.3034L6.81533 13.4817L0.333663 7.00002L6.81533 0.518357L7.99366 1.69669L3.52366 6.16669L13.667 6.16669L13.667 7.83336L3.52366 7.83336Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="swiper-button-next c tc wf xf ie ld rg _g dh pf ml vr hh rm tl zm rl ym"
+                >
+                  <svg
+                    class="th lm"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Testimonials End ===== -->
+
+      <!-- ===== Testimonials End ===== -->
+
+      <!-- ===== Counter Start ===== -->
+      <section class="i pg qh rm ji hp">
+        <img src="images/shape-11.svg" alt="Shape" class="of h ga ha ke" />
+        <img src="images/shape-07.svg" alt="Shape" class="h ia o ae jf" />
+        <img src="images/shape-14.svg" alt="Shape" class="h ja ka" />
+        <img src="images/shape-15.svg" alt="Shape" class="h q p" />
+
+        <div class="bb ze i va ki xn br">
+          <div class="tc uf sn tn xf un gg">
+            <div class="animate_top me/5 ln rj">
+              <h2 class="gk vj zp or kk wm hc">2025</h2>
+              <p class="ek bk aq">Founded</p>
+            </div>
+            <div class="animate_top me/5 ln rj">
+              <h2 class="gk vj zp or kk wm hc">100</h2>
+              <p class="ek bk aq">Clients</p>
+            </div>
+            <div class="animate_top me/5 ln rj">
+              <h2 class="gk vj zp or kk wm hc">99%</h2>
+              <p class="ek bk aq">Happy clients</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Counter End ===== -->
+
+      <!-- ===== Clients Start ===== -->
+
+      <!-- ===== Clients End ===== -->
+
+      <!-- ===== Contact Start ===== -->
+      <section class="i pg fh rm ji gp uq" id="contact-us-section">
+        <!-- Bg Shapes -->
+        <img src="images/shape-06.svg" alt="Shape" class="h aa y" />
+        <img src="images/shape-03.svg" alt="Shape" class="h ca u" />
+        <img src="images/shape-07.svg" alt="Shape" class="h w da ee" />
+        <img src="images/shape-12.svg" alt="Shape" class="h p s" />
+        <img src="images/shape-13.svg" alt="Shape" class="h r q" />
+
+        <!-- Section Title Start -->
+        <div
+          x-data="{ sectionTitle: `Let’s Stay Connected`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
+        >
+          <div class="animate_top bb ze rj ki xn vq">
+            <h2
+              x-text="sectionTitle"
+              class="fk vj pr kk wm on/5 gq/2 bb _b"
+            ></h2>
+          </div>
+        </div>
+        <!-- Section Title End -->
+
+        <div class="i va bb ye ki xn wq jb mo">
+          <div class="tc uf sn tf rn un zf xl:gap-10">
+            <div class="animate_top w-full mn/5 to/3 vk sg hh sm yh rq i pg">
+              <!-- Bg Shapes -->
+              <img src="images/shape-03.svg" alt="Shape" class="h la x wd" />
+              <img
+                src="images/shape-06.svg"
+                alt="Shape"
+                class="h la ma ne kf"
+              />
+
+              <div class="fb">
+                <h4 class="wj kk wm cc">Email Address</h4>
+                <p><a href="#">audnexsolutions@gmail.com</a></p>
+              </div>
+              <div class="fb">
+                <h4 class="wj kk wm cc">Office Location</h4>
+                <p>Kolathur</p>
+              </div>
+              <div class="fb">
+                <h4 class="wj kk wm cc">Phone Number</h4>
+                <p><a href="#">+91 9790971428 / +91 9677106357</a></p>
+              </div>
+
+              <span class="rc nd rh tm lc fb"></span>
+
+              <div>
+                <h4 class="wj kk wm qb">Social Medias</h4>
+                <ul class="tc wf fg">
+                  <li>
+                    <a href="#" class="c tc wf xf ie ld rg ml il tl">
+                      <img
+                        src="./images/instagram.svg"
+                        style="height: 100%; width: 30px"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="c tc wf xf ie ld rg ml il tl">
+                      <svg
+                        class="th lm ml il"
+                        width="19"
+                        height="18"
+                        viewBox="0 0 19 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.36198 2.58327C4.36174 3.0695 4.16835 3.53572 3.82436 3.87937C3.48037 4.22301 3.01396 4.41593 2.52773 4.41569C2.0415 4.41545 1.57528 4.22206 1.23164 3.87807C0.887991 3.53408 0.69507 3.06767 0.695313 2.58144C0.695556 2.09521 0.888943 1.62899 1.23293 1.28535C1.57692 0.941701 2.04333 0.748781 2.52956 0.749024C3.01579 0.749267 3.48201 0.942654 3.82566 1.28664C4.1693 1.63063 4.36222 2.09704 4.36198 2.58327ZM4.41698 5.77327H0.750313V17.2499H4.41698V5.77327ZM10.2103 5.77327H6.56198V17.2499H10.1736V11.2274C10.1736 7.87244 14.5461 7.56077 14.5461 11.2274V17.2499H18.167V9.98077C18.167 4.32494 11.6953 4.53577 10.1736 7.31327L10.2103 5.77327Z"
+                          fill=""
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://wa.me/919790971428?text=Hi%20Audnex%20Solution%2C%20I%20would%20like%20to%20know%20more%20about%20your%20accounting%20services."
+                      target="_blank"
+                      class="c tc wf xf ie ld rg ml il tl"
+                    >
+                      <img
+                        src="./images/whatsapp.svg"
+                        style="height: 100%; width: 25px"
+                        alt="WhatsApp Icon"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="animate_top w-full nn/5 vo/3 vk sg hh sm yh tq">
+              <form action="https://formbold.com/s/9XPAq" method="POST">
+                <div class="tc sf yo ap zf ep qb">
+                  <div class="vd to/2">
+                    <label class="rc ac" for="fullname">Full name</label>
+                    <input
+                      type="text"
+                      name="fullname"
+                      id="fullname"
+                      placeholder="Your name"
+                      class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
+                    />
+                  </div>
+
+                  <div class="vd to/2">
+                    <label class="rc ac" for="email">Email address</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Your email address"
+                      class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
+                    />
+                  </div>
+                </div>
+
+                <div class="tc sf yo ap zf ep qb">
+                  <div class="vd to/2">
+                    <label class="rc ac" for="phone">Phone number</label>
+                    <input
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      placeholder="Your phone number"
+                      class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
+                    />
+                  </div>
+
+                  <div class="vd to/2">
+                    <label class="rc ac" for="subject">Subject</label>
+                    <input
+                      type="text"
+                      for="subject"
+                      id="subject"
+                      placeholder="Type your subject"
+                      class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
+                    />
+                  </div>
+                </div>
+
+                <div class="fb">
+                  <label class="rc ac" for="message">Message</label>
+                  <textarea
+                    placeholder="Type your message"
+                    rows="4"
+                    name="message"
+                    id="message"
+                    class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 ci"
+                  ></textarea>
+                </div>
+
+                <div class="tc xf">
+                  <button class="vc rg lk gh ml il hi gi _l">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Contact End ===== -->
+
+      <!-- ===== CTA Start ===== -->
+      <section class="i pg gh ji">
+        <!-- Bg Shape -->
+        <img class="h p q" src="images/shape-16.svg" alt="Bg Shape" />
+
+        <div class="bb ye i z-10 ki xn dr">
+          <div class="tc uf sn tn un gg">
+            <div class="animate_left to/2">
+              <h2 class="fk vj zp pr lk ac">
+                Join 100+ Businesses Growing with Audnex Solutions
+              </h2>
+              <p class="lk">
+                We empower startups, SMEs, and established enterprises with
+                reliable accounting, compliance, and financial advisory
+                services. From accurate reporting to regulatory filings, we’re
+                the trusted partner behind thousands of growing businesses.
+              </p>
+            </div>
+            <div class="animate_right bf">
+              <a href="#" class="vc ek kk hh rg ol il cm gi hi">
+                Get Started Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CTA End ===== -->
+    </main>
+    <!-- ===== Footer Start ===== -->
+    <footer>
+      <div class="bb ze ki xn 2xl:ud-px-0">
+        <!-- Footer Top -->
+        <div class="ji gp">
+          <div class="tc uf ap gg fp">
+            <div class="animate_top zd/2 to/4">
+              <a href="index.html">
+                <img
+                  src="images/logo-light.png"
+                  alt="Logo"
+                  class="om"
+                  style="
+                    height: 100%;
+                    max-height: 80px;
+                    width: auto;
+                    display: inline-block;
+                  "
+                />
+                <img
+                  src="images/logo-dark.png"
+                  alt="Logo"
+                  class="xc nm"
+                  style="
+                    height: 100%;
+                    max-height: 80px;
+                    width: auto;
+                    display: none;
+                  "
+                />
+              </a>
+
+              <p class="lc fb">
+                We don’t just deliver services — we build enduring relationships
+                based on trust, reliability, and performance.
+              </p>
+            </div>
+
+            <div class="vd ro tc sf rn un gg vn">
+              <div class="animate_top">
+                <h4 class="kk wm tj ec">Quick Links</h4>
+
+                <ul>
+                  <li><a href="#" class="sc xl vb">Home</a></li>
+                  <li><a href="#about-section" class="sc xl vb">About</a></li>
+                  <li>
+                    <a href="#services-section" class="sc xl vb">Services</a>
+                  </li>
+                  <li>
+                    <a href="#contact-us-section" class="sc xl vb"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="animate_top">
+                <h4 class="kk wm tj ec">Services</h4>
+
+                <ul>
+                  <li>
+                    <a href="#contact-us-section" class="sc xl vb">Auditing</a>
+                  </li>
+                  <li>
+                    <a href="#contact-us-section" class="sc xl vb"
+                      >Statutory Compliances</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#contact-us-section" class="sc xl vb">Financing</a>
+                  </li>
+                  <li>
+                    <a href="#contact-us-section" class="sc xl vb"
+                      >Registration</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#contact-us-section" class="sc xl vb"
+                      >Accounting</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Top -->
+
+        <!-- Footer Bottom -->
+        <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj">
+          <div class="animate_top">
+            <p>&copy; 2025 Audnex Solutions. All rights reserved</p>
+          </div>
+
+          <div class="animate_top">
+            <h3>
+              An Experience by
+              <a href="https://www.cookie.org.in"
+                >Cookie Inc
+                <span style="color: #c18b13" target="_blank">.</span></a
+              >
+            </h3>
+          </div>
+        </div>
+        <!-- Footer Bottom -->
+      </div>
+    </footer>
+
+    <!-- ===== Footer End ===== -->
+
+    <!-- ====== Back To Top Start ===== -->
+    <button
+      class="xc wf xf ie ld vg sr gh tr g sa ta _a"
+      @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+      @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false"
+      :class="{ 'uc' : scrollTop }"
+    >
+      <svg
+        class="uh se qd"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <path
+          d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+        />
+      </svg>
+    </button>
+
+    <!-- ====== Back To Top End ===== -->
+
+    <script defer src="bundle.js"></script>
+  </body>
+</html>
