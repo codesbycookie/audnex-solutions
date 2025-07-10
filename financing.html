@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      AudNex Solutions | Accounting, Audit & Compliance Services in India
+    </title>
+    <meta
+      name="description"
+      content="AudNex Solutions is your trusted partner for accounting, auditing, statutory filing, financial consulting, and business registration services in India. Transparent. Reliable. Professional."
+    />
+    <meta
+      name="keywords"
+      content="AudNex Solutions, Accounting Services India, Audit Firm, Compliance Services, Statutory Filing, Business Registration, Taxation, ROC Filing, Financial Advisory"
+    />
+    <meta name="author" content="AudNex Solutions" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://www.AudNexsolutions.com/" />
+
+    <link rel="icon" href="./images/logo-light.png" type="image/png" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="AudNex Solutions | Trusted Financial & Compliance Services"
+    />
+    <meta
+      property="og:description"
+      content="Offering expert financial services including accounting, auditing, compliance, and business registration across India."
+    />
+    <meta
+      property="og:image"
+      content="https://www.AudNexsolutions.com/images/og-image.jpg"
+    />
+    <meta property="og:url" content="https://www.AudNexsolutions.com/" />
+    <meta property="og:site_name" content="AudNex Solutions" />
+
+    <!-- Language -->
+    <meta name="language" content="English" />
+    <meta name="distribution" content="global" />
+
+    <!-- CSS & Fonts -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+    x-init="
+         darkMode = JSON.parse(localStorage.getItem('darkMode'));
+         $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+    :class="{'b eh': darkMode === true}"
+  >
+    <!-- ===== Header Start ===== -->
+    <header
+      class="g s r vd ya cj overflow-visible"
+      :class="{ 'hh sm _k dj bl ll' : stickyMenu }"
+      @scroll.window="stickyMenu = (window.pageYOffset > 20) ? true : false"
+    >
+      <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
+        <div class="vd to/4 tc wf yf">
+          <a
+            href="index.html"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-decoration: none;
+            "
+          >
+            <!-- Logo -->
+            <img
+              class="om"
+              src="images/logo-light.png"
+              alt="Logo Light"
+              style="
+                height: 100%;
+                max-height: 50px;
+                width: auto;
+                display: inline-block;
+                vertical-align: middle;
+              "
+            />
+            <h1 class="fk vj zp or kk wm wb navbar-title">
+              AudNex Solutions
+            </h1></a
+          >
+
+          <!-- Hamburger Toggle BTN -->
+          <button class="po rc" @click="navigationOpen = !navigationOpen">
+            <span class="rc i pf re pd">
+              <span class="du-block h q vd yc">
+                <span
+                  class="rc i r s eh um tg te rd eb ml jl dl"
+                  :class="{ 'ue el': !navigationOpen }"
+                ></span>
+                <span
+                  class="rc i r s eh um tg te rd eb ml jl fl"
+                  :class="{ 'ue qr': !navigationOpen }"
+                ></span>
+                <span
+                  class="rc i r s eh um tg te rd eb ml jl gl"
+                  :class="{ 'ue hl': !navigationOpen }"
+                ></span>
+              </span>
+              <span class="du-block h q vd yc lf">
+                <span
+                  class="rc eh um tg ml jl el h na r ve yc"
+                  :class="{ 'sd dl': !navigationOpen }"
+                ></span>
+                <span
+                  class="rc eh um tg ml jl qr h s pa vd rd"
+                  :class="{ 'sd rr': !navigationOpen }"
+                ></span>
+              </span>
+            </span>
+          </button>
+          <!-- Hamburger Toggle BTN -->
+        </div>
+
+        <div
+          class="vd wo/4 sd qo f ho oo wf yf overflow-hidden"
+          :class="{ 'd hh rm sr td ud qg ug jc yh h-full': navigationOpen }"
+        >
+          <nav class="flex justify-start">
+            <ul class="tc _o sf yo cg ep">
+              <li>
+                <a href="index.html" class="xl">Home</a>
+              </li>
+              <li><a href="index.html#about-section" class="xl">About</a></li>
+
+              <li>
+                <button
+                  id="dropdownHoverButton"
+                  data-dropdown-toggle="dropdownHover"
+                  data-dropdown-trigger="hover"
+                  class="text-white z-[999] bg-blue-700 hover:text-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  type="button"
+                >
+                  Services
+                </button>
+              </li>
+
+              <li>
+                <a href="index.html#contact-us-section" class="xl"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="knowledge_center.html" class="xl"
+                  >Knowledge Center</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="tc wf ig pb no">
+            <div
+              class="pc h io pa ra"
+              :class="navigationOpen ? '!-ud-visible' : 'd'"
+            >
+              <label class="rc ab i">
+                <input
+                  type="checkbox"
+                  :value="darkMode"
+                  @change="darkMode = !darkMode"
+                  class="pf vd yc uk h r za ab"
+                />
+                <!-- Icon Sun -->
+                <svg
+                  :class="{ 'wn' : page === 'home', 'xh' : page === 'home' && stickyMenu }"
+                  class="th om"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.0908 18.6363C10.3549 18.6363 8.69 17.9467 7.46249 16.7192C6.23497 15.4916 5.54537 13.8268 5.54537 12.0908C5.54537 10.3549 6.23497 8.69 7.46249 7.46249C8.69 6.23497 10.3549 5.54537 12.0908 5.54537C13.8268 5.54537 15.4916 6.23497 16.7192 7.46249C17.9467 8.69 18.6363 10.3549 18.6363 12.0908C18.6363 13.8268 17.9467 15.4916 16.7192 16.7192C15.4916 17.9467 13.8268 18.6363 12.0908 18.6363ZM12.0908 16.4545C13.2481 16.4545 14.358 15.9947 15.1764 15.1764C15.9947 14.358 16.4545 13.2481 16.4545 12.0908C16.4545 10.9335 15.9947 9.8236 15.1764 9.00526C14.358 8.18692 13.2481 7.72718 12.0908 7.72718C10.9335 7.72718 9.8236 8.18692 9.00526 9.00526C8.18692 9.8236 7.72718 10.9335 7.72718 12.0908C7.72718 13.2481 8.18692 14.358 9.00526 15.1764C9.8236 15.9947 10.9335 16.4545 12.0908 16.4545ZM10.9999 0.0908203H13.1817V3.36355H10.9999V0.0908203ZM10.9999 20.8181H13.1817V24.0908H10.9999V20.8181ZM2.83446 4.377L4.377 2.83446L6.69082 5.14828L5.14828 6.69082L2.83446 4.37809V4.377ZM17.4908 19.0334L19.0334 17.4908L21.3472 19.8046L19.8046 21.3472L17.4908 19.0334ZM19.8046 2.83337L21.3472 4.377L19.0334 6.69082L17.4908 5.14828L19.8046 2.83446V2.83337ZM5.14828 17.4908L6.69082 19.0334L4.377 21.3472L2.83446 19.8046L5.14828 17.4908ZM24.0908 10.9999V13.1817H20.8181V10.9999H24.0908ZM3.36355 10.9999V13.1817H0.0908203V10.9999H3.36355Z"
+                    fill=""
+                  />
+                </svg>
+                <!-- Icon Sun -->
+                <img class="xc nm" src="images/icon-moon.svg" alt="Moon" />
+              </label>
+            </div>
+            <!-- 
+            <a
+              href="signin.html"
+              :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }"
+              class="ek pk xl"
+              >Sign In</a
+            >
+            <a
+              href="signup.html"
+              :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }"
+              class="lk gh dk rg tc wf xf _l gi hi"
+              >Sign Up</a
+            > -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      id="dropdownHover"
+      class="fixed hidden z-999 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"
+    >
+      <ul
+        class="py-2 text-sm bg-white hover:text-blue"
+        aria-labelledby="dropdownHoverButton"
+      >
+        <li>
+          <a
+            href="statutory.html"
+            class="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-800 xl"
+            >Statutory Sevices</a
+          >
+        </li>
+        <li>
+          <a
+            href="financing.html"
+            class="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-800 xl"
+            >Financing Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="registration.html"
+            class="block px-4 py-2 text-black hover:text-blue-800 hover:bg-gray-100 xl"
+            >Registration Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="accounting.html"
+            class="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-800 xl"
+            >Accounting Services</a
+          >
+        </li>
+                <li>
+          <a
+            href="advisory.html"
+            class="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-800 xl"
+            >Advisory Services</a
+          >
+        </li>
+                <li>
+          <a
+            href="auditing.html"
+            class="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-800 xl"
+            >Auditing Services</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- ===== Header End ===== -->
+
+    <main>
+      <!-- ===== Hero Start ===== -->
+        <!-- Hero Images -->
+
+
+        <!-- Hero Content -->
+<section class=" py-20 pt-50 px-4 sm:px-8 md:px-16 max-w-7xl mx-auto  animate_top">
+  <!-- Section Title -->
+  <div class="text-center mb-12 flex flex-col items-center">
+    <p class="text-4xl font-bold  mb-4 text-[#4E6BFF]">Statutory Filing Services</p>
+    <p class="text-lg text-gray-600 max-w-4xl mx-auto pt-10">
+      We are subject matter experts offering timely and compliant filings, covering everything from GST to payroll with precision and professionalism.
+    </p>
+  </div>
+
+  <!-- Services Grid -->
+  <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3  animate_top">
+    <!-- GST -->
+    <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+      <div class="mb-4">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4E6BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-check2-icon lucide-file-check-2 w-12 h-12"><path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m3 15 2 2 4-4"/></svg>      </div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">GST Filings</h3>
+      <p class="text-gray-600">
+        Preparation and filing of GSTR-1, GSTR-3B, annual returns, and ITC reconciliation.
+      </p>
+    </div>
+
+    <!-- TDS -->
+    <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+      <div class="mb-4">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4E6BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-archive-icon lucide-file-archive w-12 h-12"><path d="M10 12v-1"/><path d="M10 18v-2"/><path d="M10 7V6"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M15.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v16a2 2 0 0 0 .274 1.01"/><circle cx="10" cy="20" r="2"/></svg>      </div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">TDS Returns</h3>
+      <p class="text-gray-600">
+        Quarterly TDS returns (24Q, 26Q), challan preparation, and accurate deduction support.
+      </p>
+    </div>
+
+    <!-- Income Tax -->
+    <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+      <div class="mb-4">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4E6BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-banknote-arrow-up-icon lucide-banknote-arrow-up w-12 h-12"><path d="M12 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5"/><path d="M18 12h.01"/><path d="M19 22v-6"/><path d="m22 19-3-3-3 3"/><path d="M6 12h.01"/><circle cx="12" cy="12" r="2"/></svg>      </div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Income Tax</h3>
+      <p class="text-gray-600">
+        Tax planning, return filing for individuals and businesses, with audit-ready reports.
+      </p>
+    </div>
+
+    <!-- ROC -->
+    <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+      <div class="mb-4">
+        <img src="/images/icon-04.svg" alt="ROC Icon" class="w-12 h-12" />
+      </div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">MCA - ROC Filings</h3>
+      <p class="text-gray-600">
+        All MCA filings including AOC-4, MGT-7, Director KYC, and annual company compliance.
+      </p>
+    </div>
+
+    <!-- Payroll -->
+    <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+      <div class="mb-4">
+        <img src="/images/icon-05.svg" alt="Payroll Icon" class="w-12 h-12" />
+      </div>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Payroll Compliance</h3>
+      <p class="text-gray-600">
+        Full payroll management — payslips, ESI, PF returns, and monthly compliance filings.
+      </p>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <!-- ===== Footer Start ===== -->
+    <footer>
+      <div class="bb ze ki xn 2xl:ud-px-0">
+        <!-- Footer Top -->
+        <div class="ji gp">
+          <div class="tc uf ap gg fp">
+            <div class="animate_top zd/2 to/4">
+              <a href="index.html">
+                <img
+                  src="images/logo-light.png"
+                  alt="Logo"
+                  class="om"
+                  style="
+                    height: 100%;
+                    max-height: 80px;
+                    width: auto;
+                    display: inline-block;
+                  "
+                />
+                <img
+                  src="images/logo-dark.png"
+                  alt="Logo"
+                  class="xc nm"
+                  style="
+                    height: 100%;
+                    max-height: 80px;
+                    width: auto;
+                    display: none;
+                  "
+                />
+              </a>
+
+              <p class="lc fb">
+                We don’t just deliver services — we build enduring relationships
+                based on trust, reliability, and performance.
+              </p>
+            </div>
+
+            <div class="vd ro tc sf rn un gg vn">
+              <div class="animate_top">
+                <h4 class="kk wm tj ec">Quick Links</h4>
+
+                <ul>
+                  <li><a href="#" class="sc xl vb">Home</a></li>
+                  <li><a href="#about-section" class="sc xl vb">About</a></li>
+                  <li>
+                    <a href="#services-section" class="sc xl vb">Services</a>
+                  </li>
+                  <li>
+                    <a href="#contact-us-section" class="sc xl vb"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="animate_top">
+                <h4 class="kk wm tj ec">Services</h4>
+
+                <ul>
+                  <li>
+                    <a href="#contact-us-section" class="sc xl vb">Auditing</a>
+                  </li>
+                  <li>
+                    <a href="#contact-us-section" class="sc xl vb"
+                      >Statutory Compliances</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#contact-us-section" class="sc xl vb">Financing</a>
+                  </li>
+                  <li>
+                    <a href="#contact-us-section" class="sc xl vb"
+                      >Registration</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#contact-us-section" class="sc xl vb"
+                      >Accounting</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Top -->
+
+        <!-- Footer Bottom -->
+        <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj">
+          <div class="animate_top">
+            <p>&copy; 2025 AudNex Solutions. All rights reserved</p>
+          </div>
+
+          <div class="animate_top">
+            <h3>
+              An Experience by
+              <a href="https://www.cookie.org.in"
+                >Cookie Inc
+                <span style="color: #c18b13" target="_blank">.</span></a
+              >
+            </h3>
+          </div>
+        </div>
+        <!-- Footer Bottom -->
+      </div>
+    </footer>
+
+    <!-- ===== Footer End ===== -->
+
+    <!-- ====== Back To Top Start ===== -->
+    <button
+      class="xc wf xf ie ld vg sr gh tr g sa ta _a"
+      @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+      @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false"
+      :class="{ 'uc' : scrollTop }"
+    >
+      <svg
+        class="uh se qd"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <path
+          d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+        />
+      </svg>
+    </button>
+    <script defer src="bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>

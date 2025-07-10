@@ -24,6 +24,10 @@
   font-style: normal
 }
 
+.acc-bg {
+  background-color: oklch(0.21 0.034 264.665);
+}
+
 :root {
   --swiper-theme-color: #007aff
 }
@@ -415,6 +419,12 @@ button.swiper-pagination-bullet {
   --tw-content: '';
 }
 
+
+.accordions ul {
+   list-style: bullet;
+    margin-left: 40px;
+}
+
 /*
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -448,6 +458,12 @@ body {
   /* 2 */
 }
 
+
+.icon  {
+  height: 15px !important;
+  width: 15px !important;
+}
+
 /*
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
@@ -466,6 +482,19 @@ hr {
 /*
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
+
+
+.vd {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+
+
+}
+
+.d {
+  height: fit-content !important;
+}
+
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
@@ -1240,7 +1269,7 @@ h6 {
 }
 
 .ya {
-  z-index: 99999;
+  z-index: 99;
 }
 
 .za {
@@ -1564,9 +1593,6 @@ h6 {
   height: 0.75rem;
 }
 
-.ud {
-  max-height: 400px;
-}
 
 .vd {
   width: 100%;
@@ -2587,6 +2613,11 @@ h6 {
 
 .wl:hover {
   fill: #181C31;
+}
+
+.xl-color{
+    --tw-text-opacity: 1;
+  color: rgb(78 107 255 / var(--tw-text-opacity));
 }
 
 .xl:hover {
