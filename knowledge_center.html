@@ -187,8 +187,8 @@
                 <svg
                   :class="{ 'wn' : page === 'home', 'xh' : page === 'home' && stickyMenu }"
                   class="th om"
-                  width="25"
-                  height="25"
+                  width="30"
+                  height="30"
                   viewBox="0 0 25 25"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -199,7 +199,8 @@
                   />
                 </svg>
                 <!-- Icon Sun -->
-                <img class="xc nm" src="images/icon-moon.svg" alt="Moon" />
+                <img class="xc nm h-7 w-7" src="images/icon-moon.svg" alt="Moon" />
+              
               </label>
             </div>
             <!-- 
@@ -301,14 +302,13 @@
 
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <!-- Left Sidebar -->
-          <div class="md:col-span-1">
-            <ul class="space-y-2">
-              <li>
+<div class="md:col-span-1 w-full">
+<ul class="button-grid text-sm">
                 <button
                   @click="activeTab = 'capitalGains'"
                   :class="{'bg-blue-600 text-white xl-color': activeTab === 'capitalGains'}"
                   class="w-full text-left px-4 xi xl rounded hover:bg-blue-100"
-                >
+                  >
                   Capital Gains
                 </button>
               </li>
@@ -316,7 +316,7 @@
                 <button
                   @click="activeTab = 'itr'"
                   :class="{'bg-blue-600 text-white xl-color': activeTab === 'itr'}"
-                  class="w-full text-left px-4 xi xl rounded hover:bg-blue-100"
+                  class="w-full sm:w-1/2 text-left px-4 xi xl rounded hover:bg-blue-100"
                 >
                   ITR
                 </button>

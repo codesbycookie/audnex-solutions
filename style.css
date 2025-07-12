@@ -490,6 +490,20 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 
 }
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  font-size: 14px;
+}
+
+
+
+@media (min-width: 768px) {
+  .button-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .d {
   height: fit-content !important;
