@@ -303,11 +303,12 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <!-- Left Sidebar -->
 <div class="md:col-span-1 w-full">
-<ul class="button-grid text-sm">
+<ul class="button-grid text-sm border ">
+              <li>
                 <button
                   @click="activeTab = 'capitalGains'"
                   :class="{'bg-blue-600 text-white xl-color': activeTab === 'capitalGains'}"
-                  class="w-full text-left px-4 xi xl rounded hover:bg-blue-100"
+                  class="w-full  text-left px-4 xi xl rounded hover:bg-blue-100"
                   >
                   Capital Gains
                 </button>
