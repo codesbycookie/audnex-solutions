@@ -100,9 +100,9 @@
                 vertical-align: middle;
               "
             />
-            <h1 class="fk vj zp or kk wm wb navbar-title">
+            <h2 class="   kk wm wb navbar-title">
               AudNex Solutions
-            </h1></a
+            </h2></a
           >
 
           <!-- Hamburger Toggle BTN -->
@@ -176,17 +176,17 @@
               class="pc h io pa ra"
               :class="navigationOpen ? '!-ud-visible' : 'd'"
             >
-              <label class="rc ab i">
+              <label class="rc ab i dark-toggle flex flex-col items-end">
                 <input
                   type="checkbox"
                   :value="darkMode"
                   @change="darkMode = !darkMode"
-                  class="pf vd yc uk h r za ab"
+                  class="pf vd yc uk h r za ab toggle-checkbox"
                 />
                 <!-- Icon Sun -->
                 <svg
                   :class="{ 'wn' : page === 'home', 'xh' : page === 'home' && stickyMenu }"
-                  class="th om"
+                  class="th om icon-sun"
                   width="30"
                   height="30"
                   viewBox="0 0 25 25"
@@ -199,7 +199,7 @@
                   />
                 </svg>
                 <!-- Icon Sun -->
-                <img class="xc nm h-7 w-7" src="images/icon-moon.svg" alt="Moon" />
+                <img class="xc nm h-7 w-7 icon-moon" src="images/icon-moon.svg" alt="Moon" />
               
               </label>
             </div>
